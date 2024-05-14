@@ -26,6 +26,11 @@ export default function TOC() {
           Kanbas
         </a>
       </li>
+      <li>
+        <a id="wd-a3" target="_blank" href="https://github.com/jannunzi">
+          GitHub
+        </a>
+      </li>
     </ul>
   );
 }
