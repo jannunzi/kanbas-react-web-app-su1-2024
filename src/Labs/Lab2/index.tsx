@@ -1,7 +1,12 @@
 import AbsolutePosition from "./AbsolutePosition";
 import BackgroundColors from "./BackgroundColors";
+import BootstrapForms from "./BootstrapForms";
 import BootstrapGridSystem from "./BootstrapGridSystem";
+import BootstrapLists from "./BootstrapLists";
+import BootstrapNavigation from "./BootstrapNavigation";
 import BootstrapResponsiveGrid from "./BootstrapResponsiveGrid";
+import BootstrapResponsiveTables from "./BootstrapResponsiveTables";
+import BootstrapTables from "./BootstrapTables";
 import Borders from "./Borders";
 import Corners from "./Corners";
 import Dimensions from "./Dimensions";
@@ -93,6 +98,11 @@ export default function Lab2() {
       <BootstrapGridSystem />
       <BootstrapResponsiveGrid />
       <ScreenSizeLabel />
+      <BootstrapTables />
+      <BootstrapResponsiveTables />
+      <BootstrapLists />
+      <BootstrapForms />
+      <BootstrapNavigation />
     </div>
   );
 }
