@@ -7,7 +7,6 @@ export default function TOC() {
         <a id="wd-a" href="#/Labs" className="nav-link">
           Labs
           <br />
-          {location.pathname}
         </a>
       </li>
       <li className="nav-item">
