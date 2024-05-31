@@ -14,8 +14,8 @@ export default function Lab4() {
   }
 
   return (
-    <div className="container">
-      <h1>Lab 4</h1>
+    <div className="container-fluid">
+      <h2>Lab 4</h2>
       <ClickEvent />
       <PassingFunctions theFunction={sayHello} />
       <EventObject />

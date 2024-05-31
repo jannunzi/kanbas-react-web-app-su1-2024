@@ -13,8 +13,9 @@ export default function Labs() {
     <Provider store={store}>
       <div>
         <h1>Jose Annunziato</h1>
-        <h1>Labs</h1>
+        <h2>Labs</h2>
         <TOC />
+        <hr />
         <Routes>
           <Route path="/" element={<Navigate to="Lab1" />} />
           <Route path="/Lab1" element={<Lab1 />} />
