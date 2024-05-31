@@ -1,17 +1,30 @@
+import { courses } from "../../Database";
+import { useParams } from "react-router";
 import "./index.css";
 export default function CoursesNavigation() {
+  const { cid } = useParams();
+  const course = courses.find((course) => course._id === cid);
+  const links = [
+    "Home",
+    "Modules",
+    "Piazza",
+    "Zoom",
+    "Assignments",
+    "Quizzes",
+    "Grades",
+  ];
   return (
     <div id="wd-courses-navigation" className="list-group  rounded-0">
       <a
         id="wd-course-home-link"
-        href="#/Kanbas/Courses/1234/Home"
+        href={`#/Kanbas/Courses/${course?._id}/Home`}
         className="list-group-item border border-0 active"
       >
         Home
       </a>
       <a
         id="wd-course-modules-link"
-        href="#/Kanbas/Courses/1234/Modules"
+        href={`#/Kanbas/Courses/${course?._id}/Modules`}
         className="list-group-item text-danger border border-0"
       >
         Modules
@@ -32,7 +45,7 @@ export default function CoursesNavigation() {
       </a>
       <a
         id="wd-course-quizzes-link"
-        href="#/Kanbas/Courses/1234/Assignments"
+        href={`#/Kanbas/Courses/${course?._id}/Assignments`}
         className="list-group-item text-danger border border-0"
       >
         Assignments
