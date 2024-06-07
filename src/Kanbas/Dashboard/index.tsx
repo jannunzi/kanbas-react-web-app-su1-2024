@@ -24,8 +24,7 @@ export default function Dashboard({
           id="wd-add-new-course-click"
           onClick={addNewCourse}
         >
-          {" "}
-          Add{" "}
+          Add
         </button>
         <button
           className="btn btn-warning float-end me-2"
@@ -47,13 +46,10 @@ export default function Dashboard({
         onChange={(e) => setCourse({ ...course, description: e.target.value })}
       />
       <hr />
-      <hr />
-      <h2 id="wd-dashboard-published">
-        Published Courses ({courses.length})
-      </h2>{" "}
+      <h2 id="wd-dashboard-published">Published Courses ({courses.length})</h2>
       <hr />
       <div id="wd-dashboard-courses" className="row">
-        <div className="row row-cols-1 row-cols-md-5 g-4">
+        <div className="row row-cols-1 row-cols-md-5 g-3">
           {courses.map((course) => (
             <div className="wd-dashboard-course col" style={{ width: "300px" }}>
               <Link
