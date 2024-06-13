@@ -64,6 +64,13 @@ export default function CoursesNavigation() {
       >
         Grades
       </a>
+      <a
+        id="wd-course-grades-link"
+        href="#/Kanbas/Courses/1234/People"
+        className="list-group-item text-danger border border-0"
+      >
+        People
+      </a>
     </div>
   );
 }

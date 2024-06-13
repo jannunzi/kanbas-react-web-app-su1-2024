@@ -4,6 +4,7 @@ import Modules from "./Modules";
 import Home from "./Home";
 import { FaAlignJustify } from "react-icons/fa";
 import { useState } from "react";
+import PeopleTable from "./People/Table";
 
 export default function Courses({ courses }: { courses: any[] }) {
   const [showCourseNavigation, setShowCourseNavigation] = useState(true);
@@ -30,6 +31,8 @@ export default function Courses({ courses }: { courses: any[] }) {
             <Route path="/Assignments" element={<h1>Assignments</h1>} />
             <Route path="/Quizzes" element={<h1>Quizzes</h1>} />
             <Route path="/Grades" element={<h1>Grades</h1>} />
+            <Route path="People" element={<PeopleTable />} />
+            <Route path="People/:uid" element={<PeopleTable />} />
           </Routes>
         </div>
       </div>
